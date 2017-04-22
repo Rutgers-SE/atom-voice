@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-voice",
+        "command": "atom-voice:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-voice",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atom-voice:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

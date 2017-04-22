@@ -1,0 +1,23 @@
+{
+  "name": "atom-voice",
+  "main": "./lib/atom-voice",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "atom-voice:start"
+  },
+  "repository": "https://github.com/atom/atom-voice",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^0.9.1",
+    "get-user-media-promise": "^1.1.1",
+    "microphone-stream": "^3.0.7"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.5.7"
+  }
+}
