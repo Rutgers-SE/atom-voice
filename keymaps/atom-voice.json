@@ -1,6 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-1": "atom-voice:start",
-    "ctrl-alt-2": "atom-voice:stop"
+    "ctrl-1": "atom-voice:toggle"
   }
 }

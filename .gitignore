@@ -2,3 +2,4 @@
 /node_modules/.bin/mime
 /node_modules/.bin/nopt
 /node_modules/.bin/pbjs
+node_modules

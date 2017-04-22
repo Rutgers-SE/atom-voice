@@ -5,7 +5,7 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-voice:start"
+    "atom-workspace": "atom-voice:toggle"
   },
   "repository": "https://github.com/atom/atom-voice",
   "license": "MIT",
