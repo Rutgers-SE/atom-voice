@@ -39,7 +39,7 @@ hashmap = {
 }
 
 // for insert mode
-var elements = {
+var parsed_elements = {
     
     "escape": "escape insert mode",
     "new-line": "new line",
@@ -85,9 +85,73 @@ var elements = {
 
 }
 
+// first word: action
+//
+//
+// last word: call
+
+
+function nav(dir,num,mod=null){
+    for(i = 0; i < num; i++){
+      // core:move-dir num times
+    }
+}
+
+function sel(dir,num,mod=null){
+    for(i = 0; i < num; i++){
+      // core:select-dir num times
+    }
+}
+
+function del(dir,num,mod=null){
+    for(i = 0; i < num; i++){
+      // core:delete num times
+    }
+}
+
+function bac(dir,num,mod=null){
+    for(i = 0; i < num; i++){
+      // core:backspace num times
+    }
+}
+
+function ins(args){
+    for(i = 1; i < args.length; i++){
+        // insert args[i]
+        if (args[i] in parsed_elements){
+            // dont insert args[i]
+            // only insert args[i].value
+        }
+    }
+
+}
+
 function parse_command(args){
-    action = args[0]
-    
+    act = args[0];
+
+    if (act == "navigation"){
+        dir = args[1];
+        num = args[2];
+        nav(dir,num);
+    }
+    if (act == "selection"){
+        dir = args[1];
+        num = args[2];
+        sel(dir,num);
+    }
+    if (act == "deletion"){
+        dir = args[1];
+        num = args[2];
+        del(dir,num);
+    }
+    if (act == "backspace"){
+        dir = args[1];
+        num = args[2];
+        bac(dir,num);
+    }
+    if (act == "insertion"){
+        ins(args);
+    }
 
 }
 
