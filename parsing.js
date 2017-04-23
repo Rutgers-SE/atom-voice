@@ -10,8 +10,6 @@ function voice_capture(){
     
 }
 
-"atom-workspace":
-      "command": "sourcefetch:fetch"
 
 var hashmap = {};
 
@@ -177,93 +175,28 @@ function parse_command(args){
 
 
 
-// 
-// "context-menu": {
-//   "atom-text-editor": [
-//     {
-//       "label": "Fetch code",
-//       "command": "sourcefetch:fetch"
-//     }
-//   ]
-// },
-
-var dir_map = {
+var direction = {
     "up":"u",
     "down":"d",
     "right":"r",
     "left":"l",
 }
 
-function nav(dir,num,mod=null){
-    // core:move-dir num times
-}
-function sel(dir,num,mod=null){
-    // core:select-dir num times
-}
-
 
 function run_command(exp){
 
-    switch (exp){
-
-        case 'navigation':
-            console.log('navigation initiated');
-            dir = voice_capture();
-            num = voice_capture();
-            mod = voice_capture();
-            nav(dir,num,mod);
-            break;
-
-        case 'selection':
-            console.log('selection initiated');
-            dir = voice_capture();
-            num = voice_capture();
-            mod = voice_capture();
-            sel(dir,num,mod);
-            break;
-
-        case 'backspace':
-            console.log('backspace initiated');
-            dir = voice_capture();
-            num = voice_capture();
-            mod = voice_capture();
-            bac(dir,num,mod);
-            break;
-
-        case 'deletion':
-            console.log('deletion initiated');
-            dir = single_voice_capture();
-            num = single_voice_capture();
-            mod = single_voice_capture();
-            del(dir,num,mod);
-            break;
-
-        case 'insertion':
-            console.log('insertion initiated');
-            text = text_voice_capture();
-            ins(text);
-            break;
-
-        case 'undo':
-            console.log('undo initiated');
-            break;
-
-    }
-
 }
-
 
 function main(){
 
     // words come in one at a time and are added to the queue
     var queue;
 
-    while (queue.waitForMessage) {
-        
+    while (true) {
 
         // wait for incoming word
-        word = voice_capture();
-        run_command(word);
+        args = voice_capture();
+        run_command(args);
 
     }
 
