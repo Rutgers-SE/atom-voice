@@ -13,7 +13,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "@google-cloud/speech": "^0.9.1",
     "get-user-media-promise": "^1.1.1",
     "microphone-stream": "^3.0.7",
     "node-record-lpcm16": "^0.3.0"
