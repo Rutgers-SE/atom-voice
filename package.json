@@ -20,5 +20,8 @@
   },
   "devDependencies": {
     "electron-rebuild": "^1.5.7"
+  },
+  "package-dependencies": {
+    "atom-vim-mode-plus": "^0.91.0"
   }
 }
