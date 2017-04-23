@@ -22,5 +22,12 @@
   },
   "package-dependencies": {
     "atom-vim-mode-plus": "^0.91.0"
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
   }
 }
